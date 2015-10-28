@@ -27,6 +27,8 @@ mkdir -p $BUILD_DIR/vendor/phantomjs/bin
 mv $CACHE_DIR/$FILE_NAME $BUILD_DIR/vendor/phantomjs/bin
 chmod +x $BUILD_DIR/vendor/phantomjs/bin/phantomjs
 
+ln -s /usr/lib/x86_64-linux-gnu/libssl.so /usr/lib/libssl.so.10
+
 echo "-----> exporting PATH and LIBRARY_PATH"
 PROFILE_PATH="$BUILD_DIR/.profile.d/phantomjs.sh"
 mkdir -p $(dirname $PROFILE_PATH)
