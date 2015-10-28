@@ -25,6 +25,7 @@ mkdir -p $CACHE_DIR/$ARCHIVE_NAME
 #tar jxf $CACHE_DIR/$FILE_NAME -C $CACHE_DIR
 mkdir -p $BUILD_DIR/vendor/phantomjs/bin
 mv $CACHE_DIR/$FILE_NAME $BUILD_DIR/vendor/phantomjs/bin
+chmod +x $BUILD_DIR/vendor/phantomjs/bin/phantomjs
 
 echo "-----> exporting PATH and LIBRARY_PATH"
 PROFILE_PATH="$BUILD_DIR/.profile.d/phantomjs.sh"
