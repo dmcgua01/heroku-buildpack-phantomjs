@@ -22,9 +22,8 @@ curl $BUILDPACK_PHANTOMJS_PACKAGE -L -s -o $CACHE_DIR/$FILE_NAME
 
 echo "-----> Extracting PhantomJS ${VERSION} binaries to ${BUILD_DIR}/vendor/phantomjs"
 mkdir -p $CACHE_DIR/$ARCHIVE_NAME
-mkdir -p $BUILD_DIR/vendor
 #tar jxf $CACHE_DIR/$FILE_NAME -C $CACHE_DIR
-mkdir $BUILD_DIR/vendor/phantomjs/bin
+mkdir -p $BUILD_DIR/vendor/phantomjs/bin
 mv $CACHE_DIR/$FILE_NAME $BUILD_DIR/vendor/phantomjs/bin
 
 echo "-----> exporting PATH and LIBRARY_PATH"
