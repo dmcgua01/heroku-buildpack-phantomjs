@@ -12,7 +12,7 @@ CACHE_DIR=$2
 ARCHIVE_NAME=phantomjs-archive
 # ARCHIVE_NAME=phantomjs-${VERSION}-linux-x86_64
 # FILE_NAME=${ARCHIVE_NAME}.tar.bz2
-# BUILDPACK_PHANTOMJS_PACKAGE=https://storage101.iad3.clouddrive.com/v1/MossoCloudFS_957669/phantomjs2/centos7%2Fphantomjs\?temp_url_sig=aed51f306c4acb05906615f3046d3214d7d6e3ea\&temp_url_expires=1446091482
+BUILDPACK_PHANTOMJS_PACKAGE=https://storage101.iad3.clouddrive.com/v1/MossoCloudFS_957669/phantomjs2/centos7%2Fphantomjs\?temp_url_sig=aed51f306c4acb05906615f3046d3214d7d6e3ea\&temp_url_expires=1446091482
 
 mkdir -p $CACHE_DIR
 # if ! [ -e $CACHE_DIR/$FILE_NAME ]; then
